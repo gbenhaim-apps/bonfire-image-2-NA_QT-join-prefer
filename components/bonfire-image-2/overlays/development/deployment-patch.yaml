@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: bonfire-image-2
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/gbenhaim-apps/user1-tenant/bonfire-image-2/bonfire-image-2@sha256:bd6f05fefe919256e1eae0cabae67d24346b1dacf2c352dad9334812a706deca
+        name: container-image
+        resources: {}
+status: {}
